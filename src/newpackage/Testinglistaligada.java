@@ -39,7 +39,7 @@ public static void main(String[]args) throws IOException{
         System.out.println("COntenido de la lista ligada");
         lista.printList();
         
-        
+        /*
         System.out.println("--------------------------------------");
         System.out.println("Insercion de un nuevo nodo");
         System.out.println("Escribe el elemento a insertar");
@@ -53,6 +53,20 @@ public static void main(String[]args) throws IOException{
         System.out.println("--------------");
         System.out.println("Cotenido de la lista ligada :  ");
         lista.printList();
-        
+        */
+        Listaligada<String> lista2 = new Listaligada<>();
+        System.out.println("-------Creando nueva lista de Strings --------");
+        for(;;){
+            System.out.println("Escriba dato String para agregar a la lista : ");
+            entrada = bufer.readLine();
+            lista2.add(entrada);
+            System.out.println("?Quieres insertar mas datos?: ");
+            entrada = bufer.readLine();
+            respuesta = entrada.charAt(0);
+            if( respuesta == 'n' || respuesta == 'N')
+                break;
+        }
+        System.out.println("Contenido de la lista de Strings: ");
+        lista2.printList();
 }
 }
