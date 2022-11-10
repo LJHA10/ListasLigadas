@@ -39,7 +39,7 @@ public static void main(String[]args) throws IOException{
         System.out.println("COntenido de la lista ligada");
         lista.printList();
         
-        /*
+        
         System.out.println("--------------------------------------");
         System.out.println("Insercion de un nuevo nodo");
         System.out.println("Escribe el elemento a insertar");
@@ -53,6 +53,6 @@ public static void main(String[]args) throws IOException{
         System.out.println("--------------");
         System.out.println("Cotenido de la lista ligada :  ");
         lista.printList();
-        */
+        
 }
 }
